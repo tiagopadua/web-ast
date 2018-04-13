@@ -1,0 +1,12 @@
+# VIM swap files
+*.swp
+*.swo
+
+# VisualStudio Code folder
+.vscode
+
+# npm packages
+node_modules
+
+# Target dir for building/minified/deploy files
+dist

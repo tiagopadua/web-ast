@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Almo&ccedil;o Standard Time</title>
+
+  <link href="css/ast-[ replace:VERSION ].css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div class="ast-container" id="ast" v-if="time" v-cloak>
+   <h2 class="minus">i</h2>
+   <h1>{{ time }}</h1>
+  </div>
+  <script src="js/vue-2.5.13.min.js"></script>
+  <script src="js/ast-[ replace:VERSION ].min.js"></script>
+ </body>
+</html>

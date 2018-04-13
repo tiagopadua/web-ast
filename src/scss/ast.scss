@@ -1,0 +1,60 @@
+$yellow-gradient-from: #ffe428;
+$yellow-gradient-to: #fe8d00;
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+
+    font-family: pubg, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.ast-container {
+    position: relative;
+    top: calc(50% - 40px);
+    width: 290px;
+    height: 80px;
+    margin: auto;
+    overflow: visible;
+    text-align: center;
+
+    .minus {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        margin: 0;
+        transform: scaleX(0.5) rotate(90deg);
+        font-size: 80px;
+        font-weight: lighter;
+        color: $yellow-gradient-to;
+    }
+
+    h1 {
+        position: relative;
+        display: inline-block;
+        left: 20px;
+        width: 240px;
+        margin: 0;
+        text-align: left;
+        font-size: 100px;
+        font-weight: lighter;
+        background: $yellow-gradient-from; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, $yellow-gradient-from 0%, $yellow-gradient-to 96%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, $yellow-gradient-from 0%,$yellow-gradient-to 96%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, $yellow-gradient-from 0%,$yellow-gradient-to 96%); /* W3C, IE10+, FF16+, Chrome26+, */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@font-face {
+    font-family: "pubg";
+    src: url("../fonts/headliner45.ttf") format("truetype");
+}
