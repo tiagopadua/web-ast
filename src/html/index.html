@@ -11,7 +11,7 @@
  </head>
  <body>
   <div class="ast-container" id="ast" v-if="time" v-cloak>
-   <h2 class="minus">i</h2>
+   <h2 class="minus" v-if="show_minus">i</h2>
    <h1>{{ time }}</h1>
   </div>
   <script src="js/vue-2.5.13.min.js"></script>
